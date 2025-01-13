@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <meta charset="utf-8">
+    <title>Hilfe - Ackerprofi</title>
+    <base href="https://demo.ackerprofi.de/">
+
+    <meta name="robots" content="index,follow">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/delos/img/static/favicon/apple-touch-icon.png?5ce7e4">
+    <link rel="icon" type="image/png" sizes="32x32" href="/delos/img/static/favicon/favicon-32x32.png?5ce7e4">
+    <link rel="icon" type="image/png" sizes="16x16" href="/delos/img/static/favicon/favicon-16x16.png?5ce7e4">
+    <link rel="manifest" href="/delos/img/static/favicon/site.webmanifest?5ce7e4">
+    <link rel="mask-icon" href="/delos/img/static/favicon/safari-pinned-tab.svg?5ce7e4" color="#d60058">
+    <meta name="msapplication-TileColor" content="#d60058">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/delos/build/styles/main-BGmcMHf3.css">
+    <script type="module" src="/delos/build/browser-feature-detection/load-browser-feature-classes-B9LOgiRm.js"></script>
+    <script src="/delos/js/static/jquery/jquery-3.2.1.min.js?5ce7e4"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- *** powered by ***
+
+        DDDDD   EEEEEEE LL       OOOOO   SSSSS
+        DD  DD  EE      LL      OO   OO SS
+        DD   DD EEEEE   LL      OO   OO  SSSSS
+        DD   DD EE      LL      OO   OO      SS
+        DDDDDD  EEEEEEE LLLLLLL  OOOO0   SSSSS
+
+    *** *** -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 2rem 4rem;
+            max-width: 920px;
+            margin: 0 auto;
+            display: inline-block;
+            position: relative;
+        }
+
+        .row1 {
+            display: inline-block;
+            max-width: 900px;
+            position: relative;
+            top: -63px;
+        }
+
+
+
+        .h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .search-container {
+            margin-bottom: 2rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .search-input:focus {
+            border-color: #000;
+        }
+
+        .suggestions {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .suggestion-chip {
+            padding: 0.5rem 1rem;
+            background-color: #fafafa;
+            border: 1px solid #eaeaea;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .suggestion-chip1 {
+            padding: 0.5rem 1rem;
+            background-color: #000000;
+            border: 1px solid #000000;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #fff;
+        }
+
+        .suggestion-chip:hover {
+            background-color: #f0f0f0;
+            color: #000000;
+
+        }
+
+        .suggestion-chip:hover1 {
+            background-color: #f0f0f0;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .template-card {
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .template-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .template-image {
+            width: 100%;
+            height: 200px;
+            background-image: url("https://www.delos.biz/files/software/20-hilfe/Teaser_GR_1200x820_Manual.jpg");
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .template-content {
+            padding: 1rem;
+        }
+
+        .template-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .template-description {
+            color: #666;
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+
+
+    </style>
+        </head>
+    <body id="top" class=" theme-ackerprofi" data-delosId="1">
+    
+                <noscript><div id="javascriptDisableMessage" class="hint hint--warning"><img src="/delos/img/static/noscriptpixel.png?5ce7e4" width="1px" height="1px" alt="noscriptpixel">
+                    Wir konnten erkennen, das JavaScript in Ihrem Browser deaktiviert ist.<br>
+                    Für eine einwandfreie Funktionsweise der Software aktivieren Sie bitte JavaScript – anschließend
+                    erscheint diese Meldung nicht mehr.
+                </div></noscript>    
+            <div id="outdatedBrowserMessage" style="display: none; z-index: 10000;">
+    
+
+<div class="global-hint global-hint--error" >
+    <div class="global-hint-content">
+        <h4>
+                        Internet Explorer 11 wird nicht mehr unterstützt
+        </h4>
+        <p>Sie verwenden einen nicht mehr unterstützten Browser. Dies kann Probleme in Darstellung und Funktion verursachen. Wir empfehlen einen Wechsel auf <a target="_blank" rel="noopener" href="https://www.google.de/chrome/">Google Chrome</a>, <a target="_blank" rel="noopener"  href="https://www.mozilla.org/de/firefox/new">Firefox</a> oder <a target="_blank" rel="noopener"  href="https://www.microsoft.com/de-de/edge">Microsoft Edge</a>.</p>
+        </div>
+</div>
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Test, ob es der IE ist
+            if (/Trident\/|MSIE/.test(window.navigator.userAgent)) {
+                var outdatedBrowserMessage = document.getElementById('outdatedBrowserMessage');
+                var headerElement = document.getElementById('header');
+                outdatedBrowserMessage.style.display = 'block';
+
+                if(headerElement) {
+                    document.querySelector('#header').style.paddingTop = outdatedBrowserMessage.clientHeight + 'px';
+                }
+            }
+        }, false);
+    </script>
+</div>
+    
+    <div class="page-wrapper">
+                    <header class="page-header">
+                <div class="horizontal-spread">
+                                <nav class="mod_navigation block" id="mainmenu">
+    <a href="#skipNavigation3" class="invisible">Navigation überspringen</a>
+
+    <input type="checkbox" class="menu_toggler" name="check_5f27efe19e376" id="check_5f27efe19e376">
+
+    <ul class="level_1" role="menubar">
+                                            
+                            <li class="protected sibling first item--betriebe">
+                                                            <a href="/landwirt/betrieb"
+                       title="Betriebe"
+                       class="protected sibling first item--betriebe "
+                       role="menuitem">
+                                                Betriebe                    </a>
+                </li>
+                                                        
+                            <li class="protected sibling item--zentrale">
+                                                            <a href="/kunden/uebersicht/customer/1/jahr/0124-00002.html"
+                       title="Zentrale"
+                       class="protected sibling item--zentrale "
+                       role="menuitem">
+                                                Zentrale                    </a>
+                </li>
+                                                        
+            
+                                <li class="submenu protected item--schlagkartei">
+                    
+                    <a href="/kunden/areas/customer/1/jahr/0124-00002.html" title="Schlagkartei" class="submenu protected" role="menuitem" aria-haspopup="true">Schlagkartei</a>
+
+                    <input type="radio" class="menu_toggler" name="menucounter" id="menu_counter-3">
+
+                    <ul class="level_2" role="menu">
+                                                                                
+                            <li class="protected sibling first item--flaeche">
+                                <a href="/kunden/areas/customer/1/jahr/0124-00002.html" title="Schläge" class="protected sibling first item--flaeche"
+                                   role="menuitem">Schläge</a>
+                            </li>
+                                                                                
+                            <li class="protected sibling item--checks">
+                                <a href="/kunden/massnahmen-checkup/customer/1/jahr/0124-00002.html" title="Plausibilitätsprüfung" class="protected sibling item--checks"
+                                   role="menuitem">Plausibilitätsprüfung</a>
+                            </li>
+                                                                                
+                            <li class="protected sibling item--zonenkarte">
+                                <a href="/zonenkarte/customer/1/jahr/0124-00002/kachel.html" title="Precision Farming" class="protected sibling item--zonenkarte"
+                                   role="menuitem">Precision Farming</a>
+                            </li>
+                                            </ul>
+
+                    <label class="menu_toggler_lbl" for="menu_counter-3">Schlagkartei</label>
+                </li>
+                                                        
+                            <li class="protected sibling item--ware">
+                                                            <a href="/lager/customer/1/index.html"
+                       title="Lager"
+                       class="protected sibling item--ware "
+                       role="menuitem">
+                                                Lager                    </a>
+                </li>
+                                                        
+            
+                                <li class="submenu protected item--naehrstoffe">
+                    
+                    <a href="/kunden/tiere/customer/1/jahr/0124-00002.html" title="Nährstoffe" class="submenu protected" role="menuitem" aria-haspopup="true">Nährstoffe</a>
+
+                    <input type="radio" class="menu_toggler" name="menucounter" id="menu_counter-5">
+
+                    <ul class="level_2" role="menu">
+                                                                                
+                            <li class="protected sibling first item--tiere">
+                                <a href="/kunden/tiere/customer/1/jahr/0124-00002.html" title="Tierverwaltung" class="protected sibling first item--tiere"
+                                   role="menuitem">Tierverwaltung</a>
+                            </li>
+                                                                                
+                            <li class="protected sibling item--planungen">
+                                <a href="/bilanzen-admin/customer/1/jahr/0124-00002/naehrstoffplanung.html" title="Nährstoffplanung" class="protected sibling item--planungen"
+                                   role="menuitem">Nährstoffplanung</a>
+                            </li>
+                                                                                
+                            <li class="protected sibling item--planungen">
+                                <a href="/bilanzen-admin/customer/1/jahr/0124-00002/duengeoptimierung.html" title="Düngeoptimierung" class="protected sibling item--planungen"
+                                   role="menuitem">Düngeoptimierung</a>
+                            </li>
+                                            </ul>
+
+                    <label class="menu_toggler_lbl" for="menu_counter-5">Nährstoffe</label>
+                </li>
+                                                        
+            
+                                <li class="submenu protected item--notizen">
+                    
+                    <a href="/kunden/customer/1/jahr/0124-00002/uebersichtslisten.html" title="Auswertung" class="submenu protected" role="menuitem" aria-haspopup="true">Auswertung</a>
+
+                    <input type="radio" class="menu_toggler" name="menucounter" id="menu_counter-6">
+
+                    <ul class="level_2" role="menu">
+                                                                                
+                            <li class="protected sibling first item--uebersichtslisten">
+                                <a href="/kunden/customer/1/jahr/0124-00002/uebersichtslisten.html" title="Übersichtslisten" class="protected sibling first item--uebersichtslisten"
+                                   role="menuitem">Übersichtslisten</a>
+                            </li>
+                                                                                
+                            <li class="protected sibling item--behoerdenchecks">
+                                <a href="/behoerdenchecks/customer/1/jahr/0124-00002/naehrstoffcheck/schlaege" title="Behördenchecks" class="protected sibling item--behoerdenchecks"
+                                   role="menuitem">Behördenchecks</a>
+                            </li>
+                                                                                
+                            <li class="protected sibling item--bilanzen">
+                                <a href="/bilanzen-admin/customer/1/jahr/0124-00002/n170-bilanz.html" title="Bilanzen" class="protected sibling item--bilanzen"
+                                   role="menuitem">Bilanzen</a>
+                            </li>
+                                                                                
+                            <li class="protected sibling item--berichte">
+                                <a href="/kunden/reports/customer/1/jahr/0124-00002.html" title="Berichte" class="protected sibling item--berichte"
+                                   role="menuitem">Berichte</a>
+                            </li>
+                                            </ul>
+
+                    <label class="menu_toggler_lbl" for="menu_counter-6">Auswertung</label>
+                </li>
+                                                        
+                            <li class="protected sibling item--map">
+                                                            <a href="/karte/customer/1/jahr/0124-00002"
+                       title="Karte"
+                       class="protected sibling item--map "
+                       role="menuitem">
+                                                                            <span class="invisible">Karte</span>
+                                            </a>
+                </li>
+                                                        
+            
+                                <li class="submenu protected item--verwaltung">
+                    
+                    <a href="/verwaltung/customer/1/partnerverwaltung" title="Verwaltung" class="submenu protected" role="menuitem" aria-haspopup="true">Verwaltung</a>
+
+                    <input type="radio" class="menu_toggler" name="menucounter" id="menu_counter-8">
+
+                    <ul class="level_2" role="menu">
+                                                                                
+                            <li class="protected sibling first item--partnerverwaltung">
+                                <a href="/verwaltung/customer/1/partnerverwaltung" title="Partner" class="protected sibling first item--partnerverwaltung"
+                                   role="menuitem">Partner</a>
+                            </li>
+                                                                                
+                            <li class="protected sibling ">
+                                <a href="/customer/1/farm-machines" title="Maschinen" class="protected sibling "
+                                   role="menuitem">Maschinen</a>
+                            </li>
+                                                                                
+                            <li class="protected sibling item--mitarbeiter">
+                                <a href="/mitarbeiter-156/customer/1.html" title="Mitarbeiter" class="protected sibling item--mitarbeiter"
+                                   role="menuitem">Mitarbeiter</a>
+                            </li>
+                                                                                
+                            <li class="protected sibling item--standorte">
+                                <a href="/kunden/locations/customer/1.html" title="Standorte" class="protected sibling item--standorte"
+                                   role="menuitem">Standorte</a>
+                            </li>
+                                                                                
+                            <li class="protected sibling ">
+                                <a href="/dateiarchiv/1" title="Dateiarchiv" class="protected sibling "
+                                   role="menuitem">Dateiarchiv</a>
+                            </li>
+                                            </ul>
+
+                    <label class="menu_toggler_lbl" for="menu_counter-8">Verwaltung</label>
+                </li>
+                                                        
+                            <li class="protected sibling item--hilfe">
+                                                            <a href="/customer/1/jahr/0124-00002/hilfe.html"
+                       title="Hilfe"
+                       class="protected sibling item--hilfe "
+                       role="menuitem">
+                                                                            <span class="invisible">Hilfe</span>
+                                            </a>
+                </li>
+                    
+                                
+                                                    <li class="protected sibling item--search">
+                <a
+                    data-zentrale-suche-url="&#x2F;search-everywhere&#x2F;1-0124-00002"
+                    title="Suche"
+                    class="protected sibling item--search"
+                    role="menuitem"
+                >
+                    <span class="invisible">Suche</span>
+                </a>
+            </li>
+        
+                <li class="submenu protected my-data sibling last">
+                        <a href="/logout.html" title="Meine Daten" class="submenu protected my-data sibling last" role="menuitem" aria-haspopup="true"><span class="invisible">Meine Daten</span></a>
+
+            <input type="checkbox" class="menu_toggler" name="check_5f27efe19e0e9" id="check_5f27efe19e0e9">
+
+            <ul class="level_2" role="menu">
+
+                                                        
+                    <li class="protected first ">
+                        <a href="/logout.html" title="Logout" class="protected first "
+                           role="menuitem">Logout</a>
+                    </li>
+                
+            </ul>
+
+            <label class="menu_toggler_lbl" for="check_5f27efe19e0e9">
+                Menü
+            </label>
+        </li>
+    </ul>
+
+    <label class="menu_toggler_lbl" for="check_5f27efe19e376">
+        Menü
+    </label>
+    <a id="skipNavigation3" class="invisible">&nbsp;</a>
+</nav>
+
+    <div class="offcanvas-help">
+        <a href="/customer/1/jahr/0124-00002/hilfe.html">Benötigen Sie Hilfe?</a>
+    </div>
+    
+                            <div id="logo" class="block gradient--ackerprofi">
+        <div class="logo-inside">
+            <a href="/" title="zur Startseite von ACKERPROFI">
+                <picture>
+                    <source media="(min-width:101.25em)" srcset="/delos/img/static/ackerprofi/logo.png?5ce7e4">                     <source media="(min-width:72.5em)" srcset="/delos/img/static/ackerprofi/ackerprofi-o.png?5ce7e4">                     <source media="(min-width:48em)" srcset="/delos/img/static/ackerprofi/logo.png?5ce7e4">                     <img src="/delos/img/static/ackerprofi/ackerprofi-o.png?5ce7e4" alt="ACKERPROFI">
+                </picture>
+            </a>
+        </div>
+    </div>
+                </div>
+
+                    
+            <div class="subheader">
+            <div class="breadcrumb">
+    <span class="invisible">Sie befinden sich hier:</span>
+                        <span class="active">Hilfe</span>
+            </div>
+
+            
+                    </div>
+    
+
+                                </header>
+   
+        <main class="page-main ">
+                        
+                            <div class="editorial-content">
+        <div class="row row1">
+            <div class="col col-md-12">
+                <h2>Benutzerhandbuch</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-xl-4 image-container margin-bottom">
+                        <img src="https://www.delos.biz/files/software/20-hilfe/Teaser_GR_1200x820_Manual.jpg"
+                             alt="Ackerprofi Benutzerhandbuch" width="1200" height="820">
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-xl-4">
+                        <div class="row">
+                            <div class="col col-xs-12 col-xl-12">
+                                <h3>Wussten Sie schon …?</h3>
+                                <p>… dass wir für Sie zwei besondere Handbücher erstellt haben?</p>
+                                <h4>Ackerprofi Handbuch</h4>
+                                <p>In diesem Handbuch finden Sie umfassende Anleitungen zu Ackerprofi.</p>
+                                <a href="https://www.ackerprofi.de/files/ackerprofi/downloads/Ackerprofi-Handbuch.pdf"
+                                   class="button button--accent" title="Ackerprofi Handbuch"
+                                   target="_blank"
+                                   rel="noopener">
+                                    <span class="icon icon--rect-in-down"></span>
+                                    Ackerprofi Handbuch
+                                </a>
+                                <h4>Handbuch zum Umstieg von Acker24 auf Ackerprofi</h4>
+                                <p>In diesem Handbuch erfahren Sie die Unterschiede zwischen Acker24 und Ackerprofi.
+                                    Auch hier finden Sie gezielte Anleitungen für die Herbst-Düngebedarfsermittlung und
+                                    die Buchung erster Maßnahmen mit besonderem Fokus auf die Unterschiede zwischen
+                                    Acker24 und Ackerprofi.</p>
+                                <a href="https://www.ackerprofi.de/files/ackerprofi/downloads/Handbuch-zum-Acker24-Umstieg.pdf"
+                                   class="button button--accent" title="Handbuch zum Umstieg herunterladen"
+                                   target="_blank"
+                                   rel="noopener">
+                                    <span class="icon icon--rect-in-down"></span>
+                                    Handbuch zum Umstieg herunterladen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="main-content">
+            <h1 class="h1">Hier gerne Fragen stellen!</h1>
+            
+            <div class="search-container">
+                <form method="POST">
+                    <input type="text" id="frage" name="frage" placeholder="Stelle deine Frage..." class="search-input" value="{{ frage }}" /><br><br>
+    
+                    <button class="suggestion-chip1" type="submit">Fragen</button>
+                </form>
+            </div>
+    
+            {% if antwort %}
+            <h2>Antworten:<br></h2>
+            {% if antwort == "Keine passende Antwort gefunden." %}
+                <p><br>{{ antwort }}<br><br><br></p>
+            {% else %}
+                {% for item in antwort %}
+                    <h3><br>{{ item['ueberschrift'] }}<br></h3>
+                    <p>{{ item['antwort'] }}<br><br></p>
+                {% endfor %}
+            {% endif %}
+            {% endif %}
+    
+            <div class="suggestions">
+                <button onclick="setFrage('Wie ist der Datenschutz?')" class="suggestion-chip">Wie ist der Datenschutz? ↗</button>
+                <button onclick="setFrage('Wie führe ich die Installation aus?')" class="suggestion-chip">Wie führe ich die Installation aus? ↗</button>
+                <button onclick="setFrage('Zukauf pflanzliche Erzeugnisse')" class="suggestion-chip">Zukauf pflanzliche Erzeugnisse ↗</button>
+            </div>
+    
+        </main>
+
+ 
+        <script>
+            // Funktion, um die Frage in das Eingabefeld zu setzen
+            function setFrage(frageText) {
+                document.getElementById('frage').value = frageText;
+            }
+            
+    
+        </script>
+
+        <h2>Quick-Links zu den Videotutorials</h2>
+                    <h3>Ackerprofi Know-how &amp; Webinare</h3>
+            <div class="row">
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://www.ackerprofi.de/wissen-blog/webinaraufzeichnung-sicher-durch-die-duengeverordnung.html" title="Webinar »Sicher durch die DüV«" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/files/software/20-hilfe/Videovorschau/Webinar_Sicher-D%C3%BCV-YT.jpg" alt="Webinar »Sicher durch die DüV«" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://www.ackerprofi.de/wissen-blog/webinaraufzeichnung-alles-ueber-buchungen-und-belege.html" title="Webinar »Buchungen und Belege«" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/files/software/20-hilfe/Videovorschau/Webinar_Buchungen-und-Belege-YT.jpg" alt="Webinar »Buchungen und Belege«" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://www.ackerprofi.de/wissen-blog/webinaraufzeichnung-guter-start.html" title="Webinar »Guter Start«" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/files/software/20-hilfe/Videovorschau/Webinar_Guter-Start-YT.jpg" alt="Webinar »Guter Start«" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://www.ackerprofi.de/wissen-blog/ackerprofi-einfuehrungstutorial.html" title="Einführungstutorial" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/2/Einfuehrungstutorial_YT-Contao-65769379.jpg" alt="Einführungstutorial" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://www.ackerprofi.de/wissen-blog/know-how-erstellung-der-stoffstrombilanz.html" title="Stoffstrombilanz" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/8/Stoffstrombilanz_YT-Contao-acefd372.jpg" alt="Stoffstrombilanz" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://www.ackerprofi.de/wissen-blog/know-how-herbst-duengebedarfsermittlung-fuer-bayern.html" title="Herbst-Düngebedarfsermittlung 2021 (Bayern)" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/7/DBE-Herbst_Bayern_YT-Contao-af72d228.jpg" alt="Herbst-Düngebedarfsermittlung 2021 (Bayern)" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/herbst-dbe-he" title="Herbst-Düngebedarfsermittlung 2021 (Hessen)" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/5/DBE-Herbst_Hessen_YT-Contao-84fe9a15.jpg" alt="Herbst-Düngebedarfsermittlung 2021 (Hessen)" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://www.ackerprofi.de/wissen-blog/know-how-herbst-duengebedarfsermittlung-fuer-niedersachsen.html" title="Herbst-Düngebedarfsermittlung 2021 (Niedersachsen)" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/a/DBE-Herbst_NI_YT-Contao-d24ad55e.jpg" alt="Herbst-Düngebedarfsermittlung 2021 (Niedersachsen)" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/herbst-dbe-nw" title="Herbst-Düngebedarfsermittlung 2021 (Nordrhein-Westfalen)" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/7/DBE-Herbst_NW_YT-Contao-e9ad0d42.jpg" alt="Herbst-Düngebedarfsermittlung 2021 (Nordrhein-Westfalen)" class="image--autowidth">
+                        </a>
+                    </div>
+                            </div>
+
+                    <h3>Ackerprofi QuickTipps</h3>
+            <div class="row">
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/bodenprobenverwaltung" title="Bodenproben importieren &amp; verwalten" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/3/Bodenproben__thumb-5970bbea.jpg" alt="Bodenproben importieren &amp; verwalten" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/app" title="Mobile App" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/8/app__thumb_1280%20x%20720-d7ed9fff.jpg" alt="Mobile App" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/desktop" title="Ackerprofi vom Desktop starten" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/e/Desktopverkn%C3%BCpfung_YT-Contao-e88facf3.jpg" alt="Ackerprofi vom Desktop starten" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/anbau" title="Der Anbau – kulturbezogene Maßnahmen" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/0/Anbau__thumb-3033d213.jpg" alt="Der Anbau – kulturbezogene Maßnahmen" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/dbe" title="Düngebedarfsermittlung für Niedersachsen und NRW" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/6/DBE__thumb-92dc87ba.jpg" alt="Düngebedarfsermittlung für Niedersachsen und NRW" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/flaechenimport" title="Flächenimport &amp; Flächendatenabgleich" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/e/Fla%CC%88chenimport-Media_thumb-dbaba5d1.jpg" alt="Flächenimport &amp; Flächendatenabgleich" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/sammeldbe" title="Gesammelte Düngebedarfsermittlungen" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/a/Multi-DBE__thumb-cde7ae7d.jpg" alt="Gesammelte Düngebedarfsermittlungen" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/duengebilanz" title="Live-Düngesaldo, Düngebilanz &amp; Anlage 5" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/2/Duengebilanz_YT-Contao-e3bebdf2.jpg" alt="Live-Düngesaldo, Düngebilanz &amp; Anlage 5" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/n170er" title="N 170er Obergrenze: N-Obergrenzen unter Kontrolle" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/7/N170erBilanz_YT-Contao-b39f7199.jpg" alt="N 170er Obergrenze: N-Obergrenzen unter Kontrolle" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/naehrstoffplanung" title="Nährstoffplanung" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/8/Naehrstoffplanung_YT-Contao-c5a6fa76.jpg" alt="Nährstoffplanung" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/precisionfarming" title="Precision Farming mit NetFarming" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/3/PrecisionFarming_YT-Contao-2e9847ce.jpg" alt="Precision Farming mit NetFarming" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/pflanzenschutz" title="Rund um den Pflanzenschutz" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/2/Pflanzenschutz_YT-Contao-cf11078a.jpg" alt="Rund um den Pflanzenschutz" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/massnahmen" title="Sammel- &amp; Kombibuchungen" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/1/Ma%C3%9Fnahmen__thumb-801bfe2e.jpg" alt="Sammel- &amp; Kombibuchungen" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/tabs" title="Schneller arbeiten mit Browsertabs" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/b/Browsertabs_YT-Contao-89f43d59.jpg" alt="Schneller arbeiten mit Browsertabs" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/tierverwaltung" title="Tierverwaltung" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/5/Tierverwaltung_YT-Contao-00205ae3.jpg" alt="Tierverwaltung" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/restriktionsflaechen" title="Verwaltung von Restriktionsflächen" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/7/Restriktionsfla%CC%88chen__thumb-07431f6a.jpg" alt="Verwaltung von Restriktionsflächen" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/rotegebiete" title="Verwaltung von roten Gebieten" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/4/roteGebiete__thumb-308b29bd.jpg" alt="Verwaltung von roten Gebieten" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/erntejahrwechsel" title="Wechseln in das neue Erntejahr" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/b/Erntejahr_wechseln_YT-Contao-1d665134.jpg" alt="Wechseln in das neue Erntejahr" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/weidetagebuch" title="Weidetagebuch" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/1/Weidetagebuch_YT-Contao-acfd56d6.jpg" alt="Weidetagebuch" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/wirtschaftsduenger" title="Wirtschaftsdünger anlegen" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/f/WD-anlegen__thumb-2ed7e76e.jpg" alt="Wirtschaftsdünger anlegen" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/wirtschaftsduenger-import" title="Wirtschaftsdünger-Import" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/2/Wirtschaftsduengerimport_YT-Contao-df1f30f4.jpg" alt="Wirtschaftsdünger-Import" class="image--autowidth">
+                        </a>
+                    </div>
+                                    <div class="col xol-xs-4 col-md-3 col-xl-2">
+                        <a href="https://to.delos.biz/video/meldungen-nrw" title="Wirtschaftsdüngermeldung" target="_blank" rel="noopener"
+                           class="link--imagelink">
+                            <img src="https://www.ackerprofi.de/assets/images/a/WD-Meldung__thumb-38bb2b9d.jpg" alt="Wirtschaftsdüngermeldung" class="image--autowidth">
+                        </a>
+                    </div>
+                            </div>
+
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <div class="inside">
+                <div class="footer-links">
+                    <a href="/impressum.html" title="Impressum">Impressum</a> |
+                    <a href="/datenschutz.html" title="Datenschutz">Datenschutz</a>
+                </div>
+                <div class="footer-logo">
+                    <i>powered by</i>
+                    <a href="https://ackerprofi.de" target="_blank" rel="noreferrer noopener">
+                        <strong>ACKERPROFI</strong>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+            
+
+        <script type="module" src="/delos/build/tracing/sentry-HBihpVu6.js"></script>
+    <script type="module" src="/delos/build/flashNotifications/initFlashNotifications-DEX6r21G.js"></script>
+        <script type="module" src="/delos/build/global/global.functions-F-Ay74Ch.js"></script>
+    <script type="module" src="/delos/build/global/global.main-CG_ikhmL.js"></script>
+    <script type="module" src="/delos/build/tabsswitcher/tabsswitcher-BO4-RSzQ.js"></script>
+        </body>
+</html>
